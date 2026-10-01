@@ -1,0 +1,30 @@
+.header {
+  height: 80px;
+  display:flex;
+  flex-direction:row;
+  justify-content:space-between;
+}
+
+.left-section {
+  background-color:lightblue;
+  width:250px;
+}
+
+.icon {
+  width:60px;
+  height:60px;
+  
+}
+
+.middle-section {
+  background-color:lightpink;
+  flex:1;
+  margin-left:90px;
+  margin-right:45px;
+  max-width:500px;
+}
+
+.right-section {
+  background-color: lightblue;
+  width:300px;
+}

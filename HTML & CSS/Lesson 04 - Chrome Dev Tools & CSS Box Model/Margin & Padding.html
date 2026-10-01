@@ -1,0 +1,43 @@
+<style>
+/*Margin and Padding*/
+
+    .subscribe-button {
+        background-color: rgb(198, 26, 26);
+        color: white; /* Set text colour */
+        border: none;
+                                        /* height: 45px;         It is not helpful in buttons
+                                            width: 105px; */
+        
+        border-radius: 5px;              
+        cursor: pointer;                 
+        margin-right: 8px;               
+        margin-left: 8px;    /*It is space outside the button*/
+        transition: opacity 0.15s;
+        /*instead of width and height use padding --- spaces in the inside of the button,*/
+        padding-left: 16px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-right: 16px;
+    }
+
+
+
+    .subscribe-button:hover {     
+        opacity: 0.7; 
+    }
+
+
+
+    .subscribe-button:active {
+        /* background-color: blue; This pseudo class is use in  making the styles for clicking the button */
+        opacity: 0.3;
+    }
+
+
+</style>
+
+
+<button class = 'subscribe-button'>
+    SUBSCRIBE
+</button>
+

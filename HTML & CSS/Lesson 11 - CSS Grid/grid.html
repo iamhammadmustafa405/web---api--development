@@ -1,0 +1,69 @@
+<!-- grids are used to make nested layouts because they are far better than the block and inline block elements
+ alignment is also automatically done in grids-->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Grid Practice</title>
+  </head>
+  <body style="padding-bottom:200px;">
+    <div style="
+      display: grid;
+      grid-template-columns: 100px 100px;
+
+      ">
+      <div style="background-color:lightblue">div1</div>
+      <div style="background-color:lightpink">div2 <p> I am Hammad Mustafa.</p></div>
+    </div>
+
+
+    <div style="
+    margin-top:10px;
+      display: grid;
+      grid-template-columns: 100px 100px 200px;
+      ">
+      <div style="background-color:lightblue">100px</div>
+      <div style="background-color:lightpink">100px<p> I am Hammad Mustafa.</p></div>
+      <div style="background-color: blue;">200px</div>
+      <div style="background-color: red;">When columns greater than the grids then it wraps around to the row</div>
+    </div>
+
+
+    <div style="
+    margin-top:10px;
+      display: grid;
+      grid-template-columns: 100px 1fr;"> <!--1fr means that column take the remaining the free space.-->
+      <div style="background-color:lightblue">100px</div>
+      <div style="background-color:brown;">1fr</div>
+  </div>
+
+
+<div style="
+    margin-top:10px;
+      display: grid;
+      grid-template-columns: 100px 1fr 2fr;"> <!--1fr means that column take the remaining the free space.-->
+      <div style="background-color:lightblue">100px</div>
+      <div style="background-color:brown;">1fr</div>
+      <div style="background-color: black; color:white;">2fr</div>
+  </div>
+ <!-- 1fr -- 1 means how much wide the free space column-->
+
+
+
+
+
+ <div style="
+    margin-top:10px;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      column-gap: 20px;
+      row-gap: 40px;"> <!--1fr means that column take the remaining the free space.-->
+      <div style="background-color:lightblue; height: 200px;">1fr</div>
+      <div style="background-color:brown; height: 200px;">1fr</div>
+      <div style="background-color: black; color:white; height: 200px;">1fr</div>
+      <div style="background-color:brown; height: 200px;">1fr</div>
+      <div style="background-color: black; color:white; height: 200px;">1fr</div>
+      <div style="background-color: lightblue; height: 200px;">1fr</div>
+  </div>
+  </body>
+</html>
